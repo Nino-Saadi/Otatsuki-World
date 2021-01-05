@@ -1,5 +1,20 @@
-.navbar{
-  width:100%;
-  height: 120px;
+/* Général */
+@import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+body{
+  font-family: 'Sirin Stencil', cursive;
+}
+.accueil{
   background: radial-gradient(#263BB1,#243070);
+}
+/* Navbar */
+.navbar{
+  height: 120px;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+  font-size: 25px;
+  word-spacing: 4px;
 }
