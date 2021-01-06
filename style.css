@@ -4,7 +4,7 @@ body{
   font-family: 'Sirin Stencil', cursive;
 }
 .accueil{
-  background: radial-gradient(#263BB1,#243070);
+background: linear-gradient(149deg, rgba(168,47,164,1) 0%, rgba(168,47,164,1) 23%, rgba(57,46,126,1) 65%, rgba(32,46,117,1) 100%);
 }
 /* Navbar */
 .navbar{
@@ -14,7 +14,7 @@ body{
 .navbar a{
   text-decoration: none;
   font-style: normal;
-  color: black;
+  color: white;
   font-size: 25px;
   word-spacing: 4px;
 }
