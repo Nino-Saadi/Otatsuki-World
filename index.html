@@ -2,31 +2,30 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width-device-width">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Otatsuki</title>
 </head>
 
-<body id="app">
+<body>
   <header class="accueil">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md">
       <!-- Logo -->
       <a class ="navbar-brand" href="#"><img src="img/logo.svg" alt="log-otatuski" class="ota"></a>
       <!-- Catégories -->
-      <div class="collapse navbar-collapse d-flex" id="responsive">
-        <ul class="navbar-nav align-items-end">
+        <ul class="navbar-nav align-items-end ">
           <li class="nav-item"><a class="nav-link" href="#">Vêtements</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Accesoires</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Maison & Déco</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Figurines</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Notre Histoire</a></li>
           <!-- Panier -->
-          <li class="nav-item"><a class="nav-link" href="#"><img src="img/icon/shop.svg" alt="basket" class="basket"><a/></li>
-          </ul>
-        </div>
-      </nav>
+          <li  class="cart">
+            <a class="nav-link" href="#"><img src="img/icon/shop.svg" alt="basket" class="basket"><span>0</span></a>
+          </li>
+        </ul>
+    </nav>
 
     </header>
 
@@ -34,7 +33,7 @@
     <main>
       <div class="container">
     <!-- Barre de Recherche -->
-         <nav class="navbar navbar-light bg-light">
+         <nav class="navbar navbar-light">
            <form class="container-fluid">
              <div class="input-group">
                <button class="input-group-text" id="basic-addon1"><img src="img/icon/Loupe.svg" alt="loupe"></button>
@@ -54,25 +53,25 @@
           <div class="col-md-auto">
             <a href="#"><img class="img-fluid" src="img/product/Madara.png" alt="figurine-Madara"></a>
             <a href="#"><p><strong>Madara Uchiha HQS+ by TSUME</strong></p></a>
-            <p>999,99€</p><button type="button" class="btn btn-outline-success">Ajouter au Panier</button>
+            <p>999,99€</p><button type="button" class="btn btn-outline-success add-shop">Ajouter au Panier</button>
           </div>
 
           <div class="col-md-auto">
             <a href="#"><img class="img-fluid" src="img/product/led-Zenitsu.png"alt="led-zenitsu"></a>
             <a href="#"><p><strong>Lampe LEB Zenitsu</strong></p></a>
-            <p>28,99€</p><button type="button" class="btn btn-outline-success">Ajouter au Panier</button>
+            <p>28,99€</p><button type="button" class="btn btn-outline-success add-shop">Ajouter au Panier</button>
           </div>
 
           <div class="col-md-auto">
             <a href="#"><img class="img-fluid" src="img/product/Sweat-DBZ.png"alt="sweat-dbz"></a>
             <a href="#"><p><strong>Sweat à capuche Dragon Ball Z</strong></p></a>
-            <p>29,99€</p><button type="button" class="btn btn-outline-success">Ajouter au Panier</button>
+            <p>29,99€</p><button type="button" class="btn btn-outline-success add-shop">Ajouter au Panier</button>
           </div>
 
           <div class="col-md-auto">
             <a href="#"><img class="img-fluid" src="img/product/Tableau-OP.png"alt="tableau-one-piece"></a>
             <a href="#"><p><strong>Tableau mural One Piece Sabo/Luffy/Ace</strong></p></a>
-            <p>27,99€</p><button type="button" class="btn btn-outline-success">Ajouter au Panier</button>
+            <p>27,99€</p><button type="button" class="btn btn-outline-success add-shop">Ajouter au Panier</button>
           </div>
 
         </div><br>
@@ -89,25 +88,25 @@
          <div class="col-md-auto">
            <a href="#"><img class="img-fluid" src="img/product/Madara.png" alt="figurine-Madara"></a>
            <a href="#"><p><strong>Madara Uchiha HQS+ by TSUME</strong></p></a>
-           <p>999,99€</p><button type="button" class="btn btn-outline-success">Ajouter au Panier</button>
+           <p>999,99€</p><button type="button" class="btn btn-outline-success add-shop">Ajouter au Panier</button>
          </div>
 
          <div class="col-md-auto">
            <a href="#"><img class="img-fluid" src="img/product/Tableau-Shoto.png" alt="tableau-shoto"></a>
            <a href="#"><p><strong>Tableau mural Shoto</strong></p></a>
-           <p>26,99€</p><button type="button" class="btn btn-outline-success">Ajouter au Panier</button>
+           <p>26,99€</p><button type="button" class="btn btn-outline-success add-shop">Ajouter au Panier</button>
          </div>
 
          <div class="col-md-auto">
            <a href="#"><img class="img-fluid" src="img/product/masque-snk.png"alt="masque-snk"></a>
            <a href="#"><p><strong>Masque Attaque des Titans</strong></p></a>
-           <p>7,99€</p><button type="button" class="btn btn-outline-success">Ajouter au Panier</button>
+           <p>7,99€</p><button type="button" class="btn btn-outline-success add-shop">Ajouter au Panier</button>
          </div>
 
          <div class="col-md-auto">
            <a href="#"><img class="img-fluid" src="img/product/Sweat-Naruto.png" alt="sweat-naruto"></a>
            <a href="#"><p><strong>Sweat à capuche Naruto</strong></p></a>
-           <p>24,99€</p><button type="button" class="btn btn-outline-success">Ajouter au Panier</button>
+           <p>24,99€</p><button type="button" class="btn btn-outline-success add-shop">Ajouter au Panier</button>
          </div>
        </div><br>
 
@@ -170,7 +169,6 @@
         </div>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="app.js"></script>
+    <script  type="text/javascript" src="app.js"></script>
   </body>
   </html>
