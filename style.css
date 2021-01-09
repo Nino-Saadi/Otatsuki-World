@@ -27,6 +27,13 @@ a{
   word-spacing: 4px;
 }
 
+.cart span{
+  background: grey;
+  width:50px;
+  height:50px;
+  border-radius: 50px;
+}
+
 /* Logo */
 
 .basket{
@@ -41,6 +48,10 @@ main h1{
   font-weight: bold;
 }
 
+main h5{
+  font-weight: bold;
+}
+
 /* Footer */
 footer{
   font-family: none;
@@ -51,4 +62,40 @@ footer{
 footer a{
   text-decoration: none;
   color: white;
+}
+
+
+/* Panier */
+.products-container{
+  max-width: 650px;
+  justify-content: space-around;
+  margin:0 auto;
+  margin-top:50px;
+}
+.product-head{
+  width:100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2px solid grey;
+  margin: 0 auto;
+}
+
+.product-title{
+  width: 45%;
+}
+.price{
+  width: 15%;
+  display: flex;
+  align-items:center;
+}
+.quantity{
+  width: 30%;
+  display: flex;
+  align-items:center;
+}
+.total{
+  width: 10%;
+  display: flex;
+  align-items:center;
 }
