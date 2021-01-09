@@ -3,43 +3,43 @@ let carts = document.querySelectorAll('.add-shop');
 // Tableau des différents produits
 let products = [{
     name: 'Madara Uchiha HQS+ by TSUME',
-    tag: 'figurinemadara',
+    tag: 'Madara',
     price: 999.99,
     inCart: 0
   }, {
     name: 'Lampe LEB Zenitsu',
-    tag: 'lampezenitsu',
+    tag: 'Led-Zenitsu',
     price: 28.99,
     inCart: 0
   }, {
     name: 'Sweat à capuche Dragon Ball Z',
-    tag: 'sweatdbz',
+    tag: 'Sweat-DBZ',
     price: 29.99,
     inCart: 0
   }, {
     name: 'Tableau mural One Piece Sabo/Luffy/Ace',
-    tag: 'tableauop',
+    tag: 'Tableau-OP',
     price: 27.99,
     inCart: 0
   },
   {
     name: 'Madara Uchiha HQS+ by TSUME',
-    tag: 'figurinemadara',
+    tag: 'Madara',
     price: 999.99,
     inCart: 0
   }, {
     name: 'Tableau mural Shoto',
-    tag: 'tableaushoto',
+    tag: 'Tableau-Shoto',
     price: 26.99,
     inCart: 0
   }, {
     name: 'Masque Attaque des Titans',
-    tag: 'masquesnk',
+    tag: 'masque-snk',
     price: 7.99,
     inCart: 0
   }, {
     name: 'Sweat à capuche Naruto',
-    tag: 'sweatnaruto',
+    tag: 'Sweat-Naruto',
     price: 24.99,
     inCart: 0
   }
@@ -115,13 +115,31 @@ function totalCost(product) {
 
   if (cartCost != null) {
     cartCost = parseInt(cartCost);
-    localStorage.setItem("totalCost", cartCost + product.price);
+    localStorage.setItem('totalCost', cartCost + product.price);
   } else {
-    localStorage.setItem("totalCost", product.price);
+    localStorage.setItem('totalCost', product.price);
   }
 
+}
 
+function displayCart() {
+  let cartItems = localStorage.getItem('productsInCart');
+  cartItems = JSON.parse(cartItems);
+  console.log(cartItems);
+  let productContainer = document.querySelector('.products-container');
+  if (cartItems && productContainer) {
+    productContainer.innerHTML = '';
+    Object.values(cartItems).map(item => {
+      productContainer.innerHTML += `
+      <div class="product">
+        <img src="img/product/${item.tag}.png" class="img-fluid">
+        <span>${item.name}</span>
+      </div>
+    `
+    })
+  }
 }
 
 
 onLoadCartNumbers();
+displayCart();
