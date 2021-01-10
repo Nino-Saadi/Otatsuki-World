@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Otatsuki</title>
+</head>
+
+<body>
+  <header class="accueil">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md">
+      <!-- Logo -->
+      <a class="navbar-brand" href="home.html"><img src="img/logo.svg" alt="log-otatuski" class="ota"></a>
+      <!-- Catégories -->
+      <ul class="navbar-nav align-items-end ">
+        <li class="nav-item"><a class="nav-link" href="#">Vêtements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Accesoires</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Maison & Déco</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Figurines</a></li>
+        <li class="nav-item"><a class="nav-link" href="story.html">Notre Histoire</a></li>
+        <!-- Panier -->
+        <li class="cart">
+          <a class="nav-link" href="panier.html"><img src="img/icon/shop.svg" alt="basket" class="basket"><span>0</span></a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+<body>
+  <div class="container">
+    <!-- Barre de Recherche -->
+    <nav class="navbar navbar-light">
+      <form class="container-fluid">
+        <div class="input-group">
+          <button class="input-group-text" id="basic-addon1"><img src="img/icon/Loupe.svg" alt="loupe"></button>
+          <input type="text" class="form-control" placeholder="Figurine Naruto">
+        </div>
+      </form>
+    </nav>
+  </div>
+  
+
+  <!-- Produit -->
+  <div class="row justify-content-md-center">
+   <div class="col col-lg-2">
+     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <img src="img/product/Madara.png" class="d-block w-40" alt="...">
+         </div>
+         <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+         </div>
+         <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+         </div>
+      </div>
+         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </a>
+      </div>
+    </div>
+   </div>
+
+  <div class="row justify-content-md-center">
+   <img classe="img-fluid" src="img/product/Madara1.png" alt="">
+   <img classe="img-fluid" src="img/product/Madara2.png" alt="">
+   <img classe="img-fluid" src="img/product/Madara3.png" alt="">
+  </div>
+
+  <footer>
+
+    <!-- A Propos -->
+       <div class="container">
+         <div class="row">
+           <div class="col-sm">
+             <h1>A Propos</h1>
+             <a href="story.html"><p>Notre Histoire</p></a>
+             <a href="story.html"><p>Localisation</p></a>
+
+             <!-- Newsletter -->
+             <h2>S'inscrire à notre newsletter</h2>
+               <div class="container-fluid">
+                 <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="KurosakiIchigo@gmail.com" aria-label="Search">
+                    <button class="btn-mail" type="submit"><img class="img-fluid" src="img/icon/mail.svg"></button>
+                 </form>
+               </div>
+           </div>
+
+         <!-- Contact -->
+         <div class="col-sm">
+             <h1>Contact</h1>
+             <img class ="fb"src="img/icon/fb.svg" >
+             <img class="insta"src="img/icon/insta.svg">
+             <img class="ytb"src="img/icon/ytb.svg">
+             <img class="twit"src="img/icon/twit.svg">
+             <img class="mail"src="img/icon/mail.svg">
+             <img class="phone"src="img/icon/phone.svg">
+         </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -32,7 +32,10 @@ a{
   width:50px;
   height:50px;
   border-radius: 50px;
+  color: white;
 }
+
+
 
 /* Logo */
 
@@ -52,17 +55,6 @@ main h5{
   font-weight: bold;
 }
 
-/* Footer */
-footer{
-  font-family: none;
-  color: white;
-  background: #4f4f52;
-}
-
-footer a{
-  text-decoration: none;
-  color: white;
-}
 
 
 /* Panier */
@@ -95,7 +87,57 @@ footer a{
   align-items:center;
 }
 .total{
+
   width: 10%;
   display: flex;
   align-items:center;
+}
+
+.products{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products img{
+  width:150px;
+}
+
+.basketTotalContainer{
+  display:flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding:10px 0;
+}
+
+.basketTotalTittle{
+  width:30%;
+}
+
+.basketTotal{
+  width: 10%;
+}
+
+/* Footer */
+footer{
+  font-family: none;
+  color: white;
+  background: #4f4f52;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.fb{
+  margin:20px;
+}
+
+.ytb{
+  margin:20px;
+}
+
+.mail{
+  margin:20px;
 }

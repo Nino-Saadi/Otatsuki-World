@@ -125,18 +125,40 @@ function totalCost(product) {
 function displayCart() {
   let cartItems = localStorage.getItem('productsInCart');
   cartItems = JSON.parse(cartItems);
-  console.log(cartItems);
-  let productContainer = document.querySelector('.products-container');
+
+  let cartCost = localStorage.getItem('totalCost');
+
+  let productContainer = document.querySelector('.products');
+
   if (cartItems && productContainer) {
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
       <div class="product">
-        <img src="img/product/${item.tag}.png" class="img-fluid">
+        <ion-icon name="close-circle-outline"></ion-icon>
+        <img src="img/product/${item.tag}.png" class="img-fluid"><br>
         <span>${item.name}</span>
       </div>
+      <div class="price">${item.price}€</div>
+      <div class="quantity">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+        <span>${item.inCart}</span>
+        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+      </div>
+      <div class="total">
+        ${item.inCart * item.price}€
+      </div><br>
     `
-    })
+    });
+    productContainer.innerHTML += `
+   <div class="basketTotalContainer">
+       <h4 class="basketTotalTittle">
+          Prix Total
+       </h4>
+       <h4 class="basketTotal">
+         ${cartCost}€
+       </h4>
+  `
   }
 }
 
