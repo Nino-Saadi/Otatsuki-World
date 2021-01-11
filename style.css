@@ -11,8 +11,8 @@ a{
 }
 .accueil{
    background: linear-gradient(149deg, rgba(168,47,164,1) 0%, rgba(168,47,164,1) 23%, rgba(57,46,126,1) 65%, rgba(32,46,117,1) 100%);
-
 }
+
 /* Navbar */
 .navbar{
   height: 120px;
@@ -24,7 +24,12 @@ a{
   text-shadow: -2px 10px 8px #000000;
   color: white;
   font-size: 25px;
-  word-spacing: 4px;
+  word-spacing: 10px;
+}
+
+.nav-item a:hover{
+  border-radius: 50px;
+  background: #373036;
 }
 
 .cart span{
@@ -35,14 +40,22 @@ a{
   color: white;
 }
 
+.cart{
+  margin-left: 60px;
+}
 
+/* Barre de recherhe */
+
+.search{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 
 /* Logo */
 
 .basket{
   width: 60px;
   height: 60px;
-
 }
 
 /* Général */
@@ -55,57 +68,95 @@ main h5{
   font-weight: bold;
 }
 
+/* Fiche Produit */
+.desc h1{
+  font-size: 35px;
+  font-family: none;
+  font-weight: bold;
+  font-style: oblique;
+}
 
+.desc p{
+  font-size: 20px;
+}
+
+.fiche{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  float: right;
+}
+
+.prix{
+  float:right;
+}
+
+.prod img{
+  width:350px;
+  margin-left: 100px;
+}
 
 /* Panier */
 .products-container{
-  max-width: 650px;
-  justify-content: space-around;
+  max-width: 1000px;
   margin:0 auto;
   margin-top:50px;
 }
 .product-head{
   width:100%;
-  max-width: 650px;
-  display: flex;
-  justify-content: flex-start;
+  max-width: 1000px;
+  /* display: flex;
+  justify-content: flex-start; */
   border-bottom: 2px solid grey;
-  margin: 0 auto;
+  margin: 10px;
 }
 
 .product-title{
   width: 45%;
 }
-.price{
+.prices{
   width: 15%;
-  display: flex;
-  align-items:center;
+  /* display: flex;
+  align-items:center; */
 }
-.quantity{
+.quantitys{
   width: 30%;
-  display: flex;
-  align-items:center;
+  /* display: flex;
+  align-items:center; */
 }
-.total{
-
+.totals{
   width: 10%;
-  display: flex;
-  align-items:center;
+  /* display: flex;
+  align-items:center; */
 }
 
 .products{
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
 .products img{
   width:150px;
 }
 
+.product{
+  width:45%;
+}
+.price{
+  width:15%;
+}
+.quantity{
+  width:30%;
+}
+.quantity button{
+  text-decoration: none;
+}
+
+.total{
+  width:10%;
+}
+
 .basketTotalContainer{
-  display:flex;
-  justify-content: flex-end;
   width: 100%;
   padding:10px 0;
 }
@@ -116,6 +167,29 @@ main h5{
 
 .basketTotal{
   width: 10%;
+}
+
+.products{
+  font-size:20px;
+}
+.products button{
+  border: none;
+  background: transparent;
+}
+
+/* Story */
+
+.loca{
+  width: 648px;
+  height: 454px;
+}
+
+.adres{
+  font-size: 25px;
+}
+
+.story p{
+  font-size: 16px;
 }
 
 /* Footer */
@@ -131,13 +205,24 @@ footer a{
 }
 
 .fb{
-  margin:20px;
+  margin: 10px;
 }
 
 .ytb{
-  margin:20px;
+  margin:10px;
 }
 
 .mail{
-  margin:20px;
+  margin: 10px;
+}
+.insta{
+  margin:10px;
+}
+
+.twit{
+  margin:10px;
+}
+
+.phone{
+  margin:10px;
 }

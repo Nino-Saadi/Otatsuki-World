@@ -1,5 +1,7 @@
-// Sélection de tout les boutons "Ajouter au Panier"
+// Sélection de tout les boutons et les images avec la class add-shop
 let carts = document.querySelectorAll('.add-shop');
+
+let cancels = document.querySelector('.delete')
 // Tableau des différents produits
 let products = [{
     name: 'Madara Uchiha HQS+ by TSUME',
@@ -45,7 +47,7 @@ let products = [{
   }
 ];
 
-// Boucle permettant d'ajouter les prdouits au panier
+// Boucle permettant d'ajouter les produits au panier
 for (let i = 0; i < carts.length; i++) {
   carts[i].addEventListener('click', () => {
     addToCard(products[i]);
@@ -135,15 +137,15 @@ function displayCart() {
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
       <div class="product">
-        <ion-icon name="close-circle-outline"></ion-icon>
-        <img src="img/product/${item.tag}.png" class="img-fluid"><br>
-        <span>${item.name}</span>
+        <button class="removeCart"><ion-icon name="close-circle-outline"></ion-icon></button>
+        <img src="img/product/${item.tag}.png" class="text-center img-fluid"><br>
+        <p class="text-center"><span>${item.name}</span></p>
       </div>
       <div class="price">${item.price}€</div>
       <div class="quantity">
-        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+        <button><ion-icon name="arrow-back-circle-outline"></ion-icon></button>
         <span>${item.inCart}</span>
-        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        <button><ion-icon name="arrow-forward-circle-outline"></ion-icon></button>
       </div>
       <div class="total">
         ${item.inCart * item.price}€
@@ -151,16 +153,19 @@ function displayCart() {
     `
     });
     productContainer.innerHTML += `
-   <div class="basketTotalContainer">
+   <div class="basketTotalContainer row justify-content-md-center">
        <h4 class="basketTotalTittle">
           Prix Total
        </h4>
        <h4 class="basketTotal">
          ${cartCost}€
        </h4>
+       <button type="button" class="btn btn-outline-success validation">Valider votre commande</button>
+   </div>
   `
   }
 }
+
 
 
 onLoadCartNumbers();
