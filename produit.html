@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,37 +10,61 @@
 
 <body>
   <header class="accueil">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md d-flex justify-content-evenly">
+    <div class="row">
       <!-- Logo -->
-      <a class="navbar-brand" href="home.html"><img src="img/logo.svg" alt="log-otatuski" class="ota"></a>
+      <div class="col-2 log">
+        <div class="d-flex justify-content-center">
+          <a class ="navbar-brand" href="home.html"><img src="img/logo.svg" alt="log-otatuski" class="ota img-fluid"></a>
+        </div>
+      </div>
       <!-- Catégories -->
-      <ul class="navbar-nav align-items-end ">
+      <div class="col-8">
+        <nav class="d-flex justify-content-center d-none d-sm-block">
+          <ul class="navbar-nav flex-row align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#">Vêtements</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Accesoires</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Maison & Déco</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Figurines</a></li>
+            <li class="nav-item"><a class="nav-link" href="story.html">Notre Histoire</a></li>
+          </ul>
+        </nav>
+    </div>
+    <!-- Panier -->
+    <div class="col-2">
+      <div class="d-flex justify-content-center cart">
+        <a href="panier.html"><img src="img/icon/shop.svg" alt="basket" class="basket"><span>0</span></a>
+      </div>
+    </div>
+  </div>
+    <!-- Navigation -->
+    <!-- <nav class="navbar navbar-expand-md d-flex justify-content-evenly"> -->
+      <!-- Logo -->
+      <!-- <a class="navbar-brand" href="home.html"><img src="img/logo.svg" alt="log-otatuski" class="ota"></a> -->
+      <!-- Catégories -->
+      <!-- <ul class="navbar-nav align-items-end ">
         <li class="nav-item"><a class="nav-link" href="#">Vêtements</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Accesoires</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Maison & Déco</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Figurines</a></li>
-        <li class="nav-item"><a class="nav-link" href="story.html">Notre Histoire</a></li>
+        <li class="nav-item"><a class="nav-link" href="story.html">Notre Histoire</a></li> -->
         <!-- Panier -->
-        <li class="cart">
+        <!-- <li class="cart">
           <a class="nav-link" href="panier.html"><img src="img/icon/shop.svg" alt="basket" class="basket"><span>0</span></a>
         </li>
       </ul>
-    </nav>
+    </nav> -->
 
   </header>
 
 <body>
   <div class="container">
     <!-- Barre de Recherche -->
-    <nav class="navbar navbar-light">
-      <form class="container-fluid">
-        <div class="input-group">
-          <button class="input-group-text" id="basic-addon1"><img src="img/icon/Loupe.svg" alt="loupe"></button>
-          <input type="text" class="form-control" placeholder="Figurine Naruto">
-        </div>
-      </form>
-    </nav>
+    <form class="search container-fluid">
+      <div class="input-group">
+        <button class="input-group-text" id="basic-addon1"><img src="img/icon/Loupe.svg" alt="loupe"></button>
+        <input type="text" class="form-control" placeholder="Figurine Naruto">
+      </div>
+    </form>
   </div>
 
 

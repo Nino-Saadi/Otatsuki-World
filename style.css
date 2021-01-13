@@ -1,5 +1,8 @@
 /* Général */
+
 @import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+
+
 body{
   font-family: 'Sirin Stencil', cursive;
   height: 100%;
@@ -11,20 +14,28 @@ a{
 }
 .accueil{
    background: linear-gradient(149deg, rgba(168,47,164,1) 0%, rgba(168,47,164,1) 23%, rgba(57,46,126,1) 65%, rgba(32,46,117,1) 100%);
+   /* position: fixed; */
+   /* width: 100vw; */
 }
 
 /* Navbar */
-.navbar{
-  height: 120px;
+
+.navbar-nav{
+  height: 50px;
+  margin-top: 50px;
 }
 
-.navbar a{
+.navbar-nav li a{
   text-decoration: none;
   font-style: normal;
   text-shadow: -2px 10px 8px #000000;
   color: white;
   font-size: 25px;
-  word-spacing: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navbar-nav li{
+  margin left:10px
 }
 
 .nav-item a:hover{
@@ -33,15 +44,19 @@ a{
 }
 
 .cart span{
-  background: grey;
+  background: none;
   width:50px;
   height:50px;
-  border-radius: 50px;
+  border-radius: 20px;
   color: white;
+  font-size: 30px;
+  text-shadow: white 0 0 5px;
 }
 
-.cart{
-  margin-left: 60px;
+.basket{
+  margin-top: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 /* Barre de recherhe */
@@ -53,10 +68,6 @@ a{
 
 /* Logo */
 
-.basket{
-  width: 60px;
-  height: 60px;
-}
 
 /* Général */
 main h1{
@@ -66,6 +77,10 @@ main h1{
 
 main h5{
   font-weight: bold;
+}
+
+.uni img{
+  margin: 5px;
 }
 
 /* Fiche Produit */
@@ -93,7 +108,10 @@ main h5{
 .prod img{
   width:350px;
   margin-left: 100px;
+  margin-top: 20px;
 }
+
+
 
 /* Panier */
 .products-container{
@@ -176,6 +194,8 @@ main h5{
   border: none;
   background: transparent;
 }
+
+
 
 /* Story */
 

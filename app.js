@@ -1,7 +1,7 @@
 // Sélection de tout les boutons et les images avec la class add-shop
 let carts = document.querySelectorAll('.add-shop');
 
-let cancels = document.querySelector('.delete')
+let cancels = document.querySelector('.del')
 // Tableau des différents produits
 let products = [{
     name: 'Madara Uchiha HQS+ by TSUME',
@@ -54,6 +54,14 @@ for (let i = 0; i < carts.length; i++) {
     totalCost(products[i]);
   });
 }
+
+// for (let i = 0; i < productsInCart.length; i++) {
+//   cancels.addEventListener('click', () => {
+//     productsInCart.removeItem('');
+//   })
+// }
+
+
 
 // Fonction Pour ne pas reset le nombre du compteur
 function onLoadCartNumbers() {
@@ -137,9 +145,9 @@ function displayCart() {
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
       <div class="product">
-        <button class="removeCart"><ion-icon name="close-circle-outline"></ion-icon></button>
+        <button class="del"><ion-icon name="close-circle-outline"></ion-icon></button>
         <img src="img/product/${item.tag}.png" class="text-center img-fluid"><br>
-        <p class="text-center"><span>${item.name}</span></p>
+        <p><span>${item.name}</span></p>
       </div>
       <div class="price">${item.price}€</div>
       <div class="quantity">
