@@ -5,7 +5,6 @@
 
 body{
   font-family: 'Sirin Stencil', cursive;
-  height: 100%;
 }
 
 a{
@@ -34,9 +33,7 @@ a{
   margin-left: 20px;
   margin-right: 20px;
 }
-.navbar-nav li{
-  margin left:10px
-}
+
 
 .nav-item a:hover{
   border-radius: 50px;
@@ -106,7 +103,6 @@ main h5{
 }
 
 .prod img{
-  width:350px;
   margin-left: 100px;
   margin-top: 20px;
 }

@@ -6,3 +6,4 @@
 [0112/152153.511:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
 [0113/153630.278:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
 [0113/160849.366:ERROR:process_info.cc(375)] NtQuerySystemInformation SystemExtendedHandleInformation: La longueur d’enregistrement d’informations spécifiée ne correspond pas à la longueur nécessaire pour la classe d’informations spécifiée. (0xc0000004)
+[0114/153334.379:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
