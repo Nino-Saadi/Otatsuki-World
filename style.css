@@ -88,6 +88,10 @@ main h5{
   font-style: oblique;
 }
 
+.desc {
+  margin-top: 30px;
+}
+
 .desc p{
   font-size: 20px;
 }
@@ -103,6 +107,7 @@ main h5{
 }
 
 .prod img{
+  width:300px;
   margin-left: 100px;
   margin-top: 20px;
 }

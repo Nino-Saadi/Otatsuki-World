@@ -166,13 +166,12 @@ function displayCart() {
   }
 }
 
-// function deleteButtons() {
+//  function deleteButtons() {
 //   let deleteButton = document.querySelectorAll('.del');
 //   for (let i = 0; i < deleteButtons.length; i++) {
-//     deleteButton[i].addEventListener('click', () => {
+//   deleteButton[i].addEventListener('click', () => {
 //       productName = deleteButtons[i].parentElement.textContent;
-//     })
-//   }
+//    })   }
 // }
 
 // console.log(deleteButtons);
